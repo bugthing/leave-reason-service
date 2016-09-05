@@ -15,6 +15,14 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
+## Performance
+
+If you want to what happens when you flod the api with requests, you can play with `httperf`
+
+    httperf --print-reply --print-request --server="localhost" --port=4000 --uri="/reasons" --add-header='Content-Type:application/json\n'  --num-conns 500
+
+Ref: http://www.mervine.net/performance-testing-with-httperf
+
 ## Learn more
 
   * Official website: http://www.phoenixframework.org/
