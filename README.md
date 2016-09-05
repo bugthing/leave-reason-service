@@ -7,6 +7,7 @@ Trying out a simple http service in Phoenix base on the following guide:
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
+  * Fire up a postgres database server (e.g using docker: `docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres`)
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   * Start Phoenix endpoint with `mix phoenix.server`
 
